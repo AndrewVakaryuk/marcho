@@ -82,6 +82,7 @@ a {
     &:last-child {
       color: $accent;
       padding-right: 0;
+
       &::after {
         display: none;
       }
@@ -91,4 +92,8 @@ a {
   &__link {
     color: inherit;
   }
+}
+
+.header--404-page {
+  background-color: $bg;
 }
