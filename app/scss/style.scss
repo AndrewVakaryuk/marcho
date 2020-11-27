@@ -184,6 +184,18 @@
   }
 }
 
+.top {
+  &__container {
+    max-width: 1700px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 120px 0 130px;
+    text-align: center;
+  }
+}
+
 .top-slider {
   background-image: url('../images/decor/top-slider-bg.png');
   background-repeat: no-repeat;
@@ -659,6 +671,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+
     &::after {
       content: '';
       position: absolute;
@@ -757,15 +770,60 @@
   }
 }
 
-.BG {
-  background-color: rgb(255, 255, 255);
-  box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
-  position: absolute;
-  left: 375px;
-  top: 5688px;
-  width: 370px;
-  height: 478px;
-  z-index: 113;
+.modal {
+  padding-top: 100px;
+  max-width: 570px;
+  margin: 0 auto 115px;
+
+  &__links {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    color: #909090;
+    @extend %roboto-400;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 0 30px;
+  }
+
+  &__link--active {
+    color: $accent;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: $bg;
+    margin-top: 4px;
+    height: 60px;
+    padding: 0 15px;
+  }
+
+  &__btn {
+    display: block;
+    width: 100%;
+    padding: 14px 0;
+    background-color: $title;
+    text-transform: uppercase;
+    color: #fff;
+    @extend %roboto-400;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__error {
+    margin-top: 12px;
+    color: $accent;
+    display: inline-block;
+  }
 }
 
 
