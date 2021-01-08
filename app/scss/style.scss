@@ -149,9 +149,14 @@
     margin-bottom: 25px;
   }
 
+  &__form {
+    display: flex;
+  }
+
   &__form-input {
     max-width: 320px;
     width: 100%;
+    margin-right: 3px;
     background-color: #fff;
     border: none;
     padding: 12px 10px 12px 15px;
